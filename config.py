@@ -48,6 +48,7 @@ class Settings(BaseSettings):
     cors_origins: list[str] = Field(
         default_factory=lambda: [
             "http://localhost:3000",
+            "https://nexaforge.vercel.app",
             "https://deenbridge.vercel.app",
             "https://dnb-frontend.vercel.app",
             "http://localhost:8000",

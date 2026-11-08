@@ -237,7 +237,12 @@ async def lifespan(_app: FastAPI) -> AsyncGenerator[None, None]:
         await http_client_pool.aclose()
 
 
-app = FastAPI(title="DeenBridge AI API", lifespan=lifespan)
+app = FastAPI(
+    title="NexaForge AI API",
+    description="Grounded, multilingual AI for thoughtful Islamic learning.",
+    version="1.0.0",
+    lifespan=lifespan,
+)
 
 metrics.setup_metrics(app)
 
@@ -245,7 +250,7 @@ prompt_registry = get_registry()
 register_defaults()
 
 # --- Service API-key authentication ---
-# A shared secret between the DeenBridge backend/frontend and this service.
+# A shared secret between the NexaForge backend/frontend and this service.
 # In production the key MUST be set; set AUTH_DISABLED=true to opt out locally.
 SERVICE_API_KEY = os.getenv("SERVICE_API_KEY", "")
 AUTH_DISABLED = os.getenv("AUTH_DISABLED", "false").lower() in {"1", "true", "yes"}
@@ -838,7 +843,7 @@ async def require_admin(token: str | None = Depends(_admin_header)) -> None:
 
 
 ISLAMIC_CONTEXT = (
-    "You are an AI assistant for Deen Bridge, a platform for authentic Islamic education. "
+    "You are an AI assistant for NexaForge, a platform for authentic Islamic education. "
     "Provide respectful, accurate, and context-aware responses grounded in authentic Islamic knowledge.\n\n"
     "POLICY ON CITATIONS:\n"
     "- Cite sources when possible (Quran surah:ayah and authentic Hadith collections).\n"

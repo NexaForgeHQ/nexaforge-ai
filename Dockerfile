@@ -1,4 +1,4 @@
-# ----------  Deen Bridge AI – Dockerfile  ----------
+# ----------  NexaForge AI – Dockerfile  ----------
 # Pinned slim base, non-root, layer-cached deps, health-check.
 #
 # Build:

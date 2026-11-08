@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🕌 Deen Bridge — AI Service
+# ✦ NexaForge — AI Service
 
-**The FastAPI service behind Deen Bridge's Islamic-knowledge AI assistant, powered by Google Gemini.**
+**The FastAPI service behind NexaForge's grounded Islamic-learning assistant, powered by Google Gemini.**
 
 [![CI](https://github.com/Deen-Bridge/dnb-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/Deen-Bridge/dnb-ai/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](CONTRIBUTING.md)
 [![Python](https://img.shields.io/badge/Python-3.12-3776ab.svg)](https://www.python.org/)
 
-[Live API](https://dnb-ai.onrender.com) · [Web App](https://dnb-frontend.vercel.app) · [Report a Bug](https://github.com/Deen-Bridge/dnb-ai/issues) · [Contribute](CONTRIBUTING.md)
+[Live API](https://nexaforge-ai.onrender.com) · [Web App](https://nexaforge.vercel.app) · [Report a Bug](https://github.com/NexaForgeHQ/nexaforge-ai/issues) · [Contribute](CONTRIBUTING.md)
 
 </div>
 
@@ -17,7 +17,7 @@
 
 ## About
 
-This service powers the AI assistant inside **Deen Bridge**, a platform for authentic Islamic education built on the **Stellar network** — courses and books are purchased with USDC, and creators are paid directly to their own Stellar wallets. The assistant wraps Google's Gemini model with an Islamic-knowledge system prompt, content safety filters, and per-session conversation history, exposing a simple chat API consumed by the web app.
+This service powers the AI assistant inside **NexaForge**, a platform for authentic Islamic education built on the **Stellar network** — courses and books are purchased with USDC, and creators are paid directly to their own Stellar wallets. The assistant wraps Google's Gemini model with an Islamic-knowledge system prompt, content safety filters, and per-session conversation history, exposing a simple chat API consumed by the web app.
 
 On the roadmap: further Stellar-aware assistance beyond zakat and purchase Q&A
 (see open issues). Zakat on a wallet's on-chain USDC balance and factual answers
